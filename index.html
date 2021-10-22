@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Santos - DoWhile 2021</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="avatar">
+                <span>
+                    <img src="images/selo.svg" alt="Selo Rocketseat">
+                </span>
+                <img src="http://lorempixel.com/186/185/people/" alt="Foto Pessoal">
+            </div>
+            <h1 id="userName">Leandro Santos</h1>
+            <a href="https://github.com/o-leandro" target="_blank">
+                <img src="images/github.svg" alt="Ícone do github">
+                o-leandro</a>
+                <p>An instructor focused on helping pople start programming for web</p>
+                <ul id="socialLinks"> 
+                    <li class="youtube">
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="images/youtube.svg" alt="Ícone youtube">
+                        </a>
+                    </li>
+                     <li class="facebook">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.svg" alt="Ícone facebook">
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/instagram.svg" alt="Ícone instagram" target="_blank">
+                        </a>
+                    </li>
+                    <li class="twitter">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/twiter.svg" alt="Ícone twiter">
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </main>
+    <script>
+     
+        const LinksSocialMedia = {
+            github: "maykbrito",
+            youtube: "maykbrito",
+            facebook: "maykbrito",
+            instagram: "maykbrito",
+            twitter: "maykbrito"
+        }
+
+        function changeSocialMediaLinks() {
+            // document.getElementById('userName').textContent = "Fernando Costa"
+            // userName.textContent = "Kaio Brito"
+
+            // for(let i = 0; i <= 10; i++) {
+            //     alert(i);
+            // }
+
+            for(let li of socialLinks.children) {
+                const social = li.getAttribute('class');
+
+                li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+
+                alert(li.children[0].href)
+
+            }
+        }
+
+        // changeSocialMediaLinks();
+
+
+
+
+
+
+        // boas práticas de escrita de variáveis
+        // camelCase
+        // PascalCase
+        // snake_case
+    </script>
+</body>
+</html>
