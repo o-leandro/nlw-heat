@@ -17,13 +17,13 @@
                 <span>
                     <img src="images/selo.svg" alt="Selo Rocketseat">
                 </span>
-                <img src="http://lorempixel.com/186/185/people/" alt="Foto Pessoal">
+                <img id="userImage" src="http://lorempixel.com/186/185/people/" alt="Foto Pessoal">
             </div>
-            <h1 id="userName">Leandro Santos</h1>
-            <a href="https://github.com/o-leandro" target="_blank">
+            <h1 id="userName">Mayk Brito</h1>
+            <a id="userLink" href="https://github.com/maykBrito" target="_blank">
                 <img src="images/github.svg" alt="Ícone do github">
-                o-leandro</a>
-                <p>An instructor focused on helping pople start programming for web</p>
+                <span id="userLogin">maykBrito</span></a>
+                <p id="userBio">An instructor focused on helping pople start programming for web</p>
                 <ul id="socialLinks"> 
                     <li class="youtube">
                         <a href="https://youtube.com" target="_blank">
@@ -48,45 +48,6 @@
                 </ul>
         </div>
     </main>
-    <script>
-     
-        const LinksSocialMedia = {
-            github: "maykbrito",
-            youtube: "maykbrito",
-            facebook: "maykbrito",
-            instagram: "maykbrito",
-            twitter: "maykbrito"
-        }
-
-        function changeSocialMediaLinks() {
-            // document.getElementById('userName').textContent = "Fernando Costa"
-            // userName.textContent = "Kaio Brito"
-
-            // for(let i = 0; i <= 10; i++) {
-            //     alert(i);
-            // }
-
-            for(let li of socialLinks.children) {
-                const social = li.getAttribute('class');
-
-                li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-
-                alert(li.children[0].href)
-
-            }
-        }
-
-        // changeSocialMediaLinks();
-
-
-
-
-
-
-        // boas práticas de escrita de variáveis
-        // camelCase
-        // PascalCase
-        // snake_case
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
